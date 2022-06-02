@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <py-env>
+      - paths:
+        - ./modules/name.py
+    </py-env>
+  </head>
+  <body> <py-script> 
+    <!-- To use import from local modules you must run server with this htlm
+      $ cd /tmp/pyscript-test/
+      $ python3 -m http.server
+        Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+    -->
+    from name import print_name
+    print_name("John")
+  </py-script> </body>
+</html>
